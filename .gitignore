@@ -1,0 +1,23 @@
+# Azure / PowerShell specific
+*.pfx
+*.cer
+*.publishsettings
+*.PublishSettings
+azure-credentials.json
+.env
+
+# PowerShell
+*.ps1xml
+
+# Windows / OS junk
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# VS Code (if you use it)
+.vscode/
+
+# Local config that might contain subscription/tenant IDs
+*.local.json
+appsettings.local.json
+Add .gitignore
