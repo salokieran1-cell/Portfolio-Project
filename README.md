@@ -31,7 +31,7 @@ Hands-on Azure projects built to demonstrate practical skills gained through my 
 
 3. **Configured the Network Security Group**
    ![NSG rules](screenshots/03-nsg-rules.png)
-   Commit: [link to commit]
+   Commit: [f42f6d]https://github.com/salokieran1-cell/Portfolio-Project/commit/f42f6d804365c81504b7250cbbe9cbcd6594a3c1
 
 ### Notes / Troubleshooting
 
