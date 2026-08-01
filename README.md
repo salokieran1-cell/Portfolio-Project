@@ -25,7 +25,7 @@ Hands-on Azure projects built to demonstrate practical skills gained through my 
 
 2. **Created the virtual machine**
    ![VM creation output](screenshots/02-vm-created.png)
-   Commit: [link to commit]
+   Commit: https://github.com/salokieran1-cell/Portfolio-Project/commit/aa79b81b547c8c9294e8e9697aa559125fd4e398
 
    Azure flagged that this VM wasn't created with Trusted Launch (secure boot + vTPM) enabled. For this learning project I used the default configuration, but in a production scenario I'd enable Trusted Launch at creation time — `--security-type TrustedLaunch` — to protect against boot-level threats like rootkits.
 
