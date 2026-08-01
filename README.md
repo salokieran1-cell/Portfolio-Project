@@ -33,11 +33,11 @@ Hands-on Azure projects built to demonstrate practical skills gained through my 
    ![NSG rules](screenshots/03-nsg-rules.png)
    Commit: [f42f6d8]https://github.com/salokieran1-cell/Portfolio-Project/commit/f42f6d804365c81504b7250cbbe9cbcd6594a3c1
 
-   Configure NSG for least-privilege inbound access
+    Configure NSG for least-privilege inbound access
 
-- Deny-all baseline rule (priority 4096)
-- SSH allow scoped to my IP only (priority 100)
-- Attached NSG directly to the VM's network interface
+   - Deny-all baseline rule (priority 4096)
+   - SSH allow scoped to my IP only (priority 100)
+   - Attached NSG directly to the VM's network interface
 
 ### Notes / Troubleshooting
 
