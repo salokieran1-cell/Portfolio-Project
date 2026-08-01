@@ -21,7 +21,7 @@ Hands-on Azure projects built to demonstrate practical skills gained through my 
 
 1. **Created the resource group**
    ![Resource group creation](screenshots/01-resource-group.png)
-   Commit: [link to commit]
+   Commit: https://github.com/salokieran1-cell/Portfolio-Project/commit/fdc3ea70708c70d994fdfdfdf969bd1e696b9a2b
 
 2. **Created the virtual machine**
    ![VM creation output](screenshots/02-vm-created.png)
