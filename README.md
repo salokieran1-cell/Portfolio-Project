@@ -21,11 +21,13 @@ Hands-on Azure projects built to demonstrate practical skills gained through my 
 
 1. **Created the resource group**
    ![Resource group creation](screenshots/01-resource-group.png)
-   Commit: [fdc3ea7] https://github.com/salokieran1-cell/Portfolio-Project/commit/fdc3ea70708c70d994fdfdfdf969bd1e696b9a2b
-
-2. **Deployed the virtual machine**
-   ![VM deployment](screenshots/02-vm-deployed.png)
    Commit: [link to commit]
+
+2. **Created the virtual machine**
+   ![VM creation output](screenshots/02-vm-created.png)
+   Commit: [link to commit]
+
+   Azure flagged that this VM wasn't created with Trusted Launch (secure boot + vTPM) enabled. For this learning project I used the default configuration, but in a production scenario I'd enable Trusted Launch at creation time — `--security-type TrustedLaunch` — to protect against boot-level threats like rootkits.
 
 3. **Configured the Network Security Group**
    ![NSG rules](screenshots/03-nsg-rules.png)
