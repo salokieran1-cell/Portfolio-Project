@@ -52,12 +52,17 @@ Hands-on Azure projects built to demonstrate practical skills gained through my 
 
 **Tools used:** Azure Portal
 
-### Steps
+## Project 2 (Attempted): Conditional Access
 
-1. **Set up the Conditional Access policy**
-   ![Conditional access policy](screenshots/04-conditional-access.png)
-   Commit: [link to commit]
-
+Attempted to configure a Conditional Access policy but hit a licensing wall: 
+Entra ID P2 trial activation requires organization-level admin rights, which 
+neither my institution-managed tenant nor a newly created personal tenant 
+could provide (personal signup required a business tax ID; the institution's 
+lab environment lacked the necessary role). Pivoted to an Infrastructure-as-
+Code project instead. This is documented because understanding licensing 
+and tenant-permission boundaries is itself a real skill for anyone working 
+in Azure administration.
+   
 ### Notes / Troubleshooting
 
 _(fill in as you go)_
