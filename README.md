@@ -6,7 +6,7 @@ Hands-on Azure projects built to demonstrate practical skills gained through my 
 
 - Azure Virtual Machine deployment
 - Network Security Group (NSG) configuration
-- Conditional Access policy setup
+- Infrastructure as Code (Bicep)
 - Azure Cloud Shell / Azure CLI administration
 
 ---
@@ -46,38 +46,44 @@ Hands-on Azure projects built to demonstrate practical skills gained through my 
 
 ---
 
-## Project 2: Conditional Access
+## Project 2: Infrastructure as Code (Bicep)
 
-**Goal:** Configure a Conditional Access policy to control sign-in requirements.
+**Goal:** Rebuild Project 1's VM + NSG deployment using a Bicep template for repeatable, automated infrastructure.
 
-**Tools used:** Azure Portal
+**Tools used:** Azure CLI, Bicep
 
-## Project 2 (Attempted): Conditional Access
+### Steps
 
-Attempted to configure a Conditional Access policy but hit a licensing wall: 
-Entra ID P2 trial activation requires organization-level admin rights, which 
-neither my institution-managed tenant nor a newly created personal tenant 
-could provide (personal signup required a business tax ID; the institution's 
-lab environment lacked the necessary role). Pivoted to an Infrastructure-as-
-Code project instead. This is documented because understanding licensing 
-and tenant-permission boundaries is itself a real skill for anyone working 
-in Azure administration.
-   
+1. **Wrote the Bicep template** (`main.bicep`) defining the VM, NSG, VNet, and NIC as code
+   Commit: [link to commit]
+
+2. **Deployed the template via Azure CLI**
+   ![Bicep deployment output](screenshots/05-bicep-deploy.png)
+   Commit: [link to commit]
+
+3. **Verified the deployed NSG rules match Project 1's manual configuration**
+   ![NSG rules from Bicep deployment](screenshots/06-bicep-nsg-verify.png)
+
 ### Notes / Troubleshooting
 
 _(fill in as you go)_
 
 ---
 
-## Certifications (in progress)
+## Appendix: Conditional Access (not completed)
 
-- Microsoft Certified: Azure Fundamentals (AZ-900)
-- Microsoft Certified: Azure Administrator Associate (AZ-104)
-- Microsoft Certified: Azure Security Engineer Associate (AZ-500)
-- Microsoft Certified: Cybersecurity Architect Expert (SC-100)
-- Microsoft Certified: Security Operations Analyst Associate (SC-200)
+Attempted to configure a Conditional Access policy but hit a licensing wall: Entra ID P2 trial activation requires organization-level admin rights, which neither my institution-managed tenant nor a newly created personal tenant could provide (personal signup required a business tax ID; the institution's lab environment lacked the necessary role). Pivoted to an Infrastructure-as-Code project instead — understanding licensing and tenant-permission boundaries is itself a real skill for anyone working in Azure administration.
+
+---
+
+## Certifications
+
+- Microsoft Certified: Azure Fundamentals (AZ-900) — **Certified**
+- Microsoft Certified: Azure Administrator Associate (AZ-104) — **Certified**
+- Microsoft Certified: Azure Security Engineer Associate (AZ-500) — in progress
+- Microsoft Certified: Cybersecurity Architect Expert (SC-100) — in progress
+- Microsoft Certified: Security Operations Analyst Associate (SC-200) — in progress
 
 ## Contact
 
 _(add your LinkedIn / email if you want recruiters to reach out directly)_
-
