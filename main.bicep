@@ -64,8 +64,8 @@ resource vnet 'Microsoft.Network/virtualNetworks@2023-09-01' = {
 resource pip 'Microsoft.Network/publicIPAddresses@2023-09-01' = {
   name: '${vmName}PublicIP'
   location: location
-  properties: { publicIPAllocationMethod: 'Dynamic' }
-  sku: { name: 'Basic' }
+  properties: { publicIPAllocationMethod: 'Static' }
+  sku: { name: 'Standard' }
 }
 
 // Network Interface
