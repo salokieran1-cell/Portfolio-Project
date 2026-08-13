@@ -59,7 +59,7 @@ Hands-on Azure projects built to demonstrate practical skills gained through my 
 
 2. **Deployed the template via Azure CLI**
    ![Bicep deployment succeeded](screenshots/05-bicep-deploy.png)
-   Commit: [link to commit]
+   Commit: [e64e438](https://github.com/salokieran1-cell/Portfolio-Project/commit/e64e438db13ebb4e7319a7bde75bc67dca97b736)
 
 3. **Verified all resources deployed together in the resource group**
    ![Resource group showing all 6 resources](screenshots/06-resource-group-overview.png)
