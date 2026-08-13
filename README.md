@@ -31,7 +31,7 @@ Hands-on Azure projects built to demonstrate practical skills gained through my 
 
 3. **Configured the Network Security Group**
    ![NSG rules](screenshots/03-nsg-rules.png)
-   Commit: [f42f6d8](https://github.com/salokieran1-cell/Portfolio-Project/commit/f42f6d804365c81504b7250cbbe9cbcd6594a3c1)
+   Commit: [e43a716](https://github.com/salokieran1-cell/Portfolio-Project/commit/e43a716f03b2f66034e988c2765381b9a473a562)
 
    Configured the NSG for least-privilege inbound access:
    - Deny-all baseline rule (priority 4096)
