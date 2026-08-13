@@ -54,19 +54,28 @@ Hands-on Azure projects built to demonstrate practical skills gained through my 
 
 ### Steps
 
-1. **Wrote the Bicep template** (`main.bicep`) defining the VM, NSG, VNet, and NIC as code
+1. **Wrote the Bicep template** (`main.bicep`) defining the VM, NSG, VNet, Public IP, and NIC as code
    Commit: [link to commit]
 
 2. **Deployed the template via Azure CLI**
-   ![Bicep deployment output](screenshots/05-bicep-deploy.png)
+   ![Bicep deployment succeeded](screenshots/05-bicep-deploy.png)
    Commit: [link to commit]
 
-3. **Verified the deployed NSG rules match Project 1's manual configuration**
-   ![NSG rules from Bicep deployment](screenshots/06-bicep-nsg-verify.png)
+3. **Verified all resources deployed together in the resource group**
+   ![Resource group showing all 6 resources](screenshots/06-resource-group-overview.png)
+
+4. **Confirmed the VM is running with the expected configuration**
+   ![VM overview - Running, Standard_B2ats_v2, Ubuntu 22.04](screenshots/07-vm-overview.png)
+
+5. **Verified the NSG rules match Project 1's manual configuration exactly**
+   ![NSG rules - AllowSSHFromMyIP + DenyAllInbound](screenshots/08-nsg-verify.png)
+
+   This is the core proof point of this project: the same secure, least-privilege posture from Project 1 (deny-all baseline + SSH scoped to my IP) was reproduced automatically through code, rather than manual configuration.
 
 ### Notes / Troubleshooting
 
-_(fill in as you go)_
+- **`IPv4BasicSkuPublicIpCountLimitReached`**: the original template requested a Basic SKU public IP, but Azure retired Basic SKU public IPs (completed September 2025) and most subscriptions now have a limit of 0. Project 1's `az vm create` had defaulted to Standard SKU automatically, which is why this didn't surface until writing the template explicitly. Fixed by changing the `publicIPAddresses` resource to `sku: { name: 'Standard' }` with `publicIPAllocationMethod: 'Static'` (Standard SKU requires static allocation).
+- **Resource group had been deleted** between sessions (deleted intentionally to avoid idle credit usage while away from the laptop). Recreated the empty resource group with one command, then re-ran the same Bicep deployment to rebuild everything else — a practical demonstration of what Infrastructure as Code is actually for: fast, repeatable environment rebuilds instead of redoing manual configuration from scratch.
 
 ---
 
@@ -80,7 +89,7 @@ Attempted to configure a Conditional Access policy but hit a licensing wall: Ent
 
 - Microsoft Certified: Azure Fundamentals (AZ-900) — **Certified**
 - Microsoft Certified: Azure Administrator Associate (AZ-104) — **Certified**
-- Microsoft Certified: Azure Security Engineer Associate (AZ-500) — in progress
+- Microsoft Certified: Cloud and AI Security Engineer Associate (SC-500) — in progress *(AZ-500 retires Aug 31, 2026; pivoted to its replacement, SC-500)*
 - Microsoft Certified: Cybersecurity Architect Expert (SC-100) — in progress
 - Microsoft Certified: Security Operations Analyst Associate (SC-200) — in progress
 
