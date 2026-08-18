@@ -55,7 +55,7 @@ Hands-on Azure projects built to demonstrate practical skills gained through my 
 ### Steps
 
 1. **Wrote the Bicep template** (`main.bicep`) defining the VM, NSG, VNet, Public IP, and NIC as code
-   Commit: [link to commit]
+   Commit: [28f347](https://github.com/salokieran1-cell/Portfolio-Project/commit/28f347cd748d457ccf599dbe8b6f6d63828c247a)
 
 2. **Deployed the template via Azure CLI**
    ![Bicep deployment succeeded](screenshots/05-bicep-deploy.png)
