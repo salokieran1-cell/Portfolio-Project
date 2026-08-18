@@ -95,4 +95,5 @@ Attempted to configure a Conditional Access policy but hit a licensing wall: Ent
 
 ## Contact
 
-_(add your LinkedIn / email if you want recruiters to reach out directly)_
+- LinkedIn: [linkedin.com/in/kieran-salo-4b5b13299](https://www.linkedin.com/in/kieran-salo-4b5b13299/)
+- Email: salokieran1@gmail.com
